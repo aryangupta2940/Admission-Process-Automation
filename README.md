@@ -216,8 +216,8 @@ npm test
 4. Configure the Web Service settings:
    - **Root Directory:** `.` (repository root)
    - **Runtime:** `Node`
-   - **Build Command:** `npm run build`
-   - **Start Command:** `npm start`
+   - **Build Command:** `npm --prefix backend install && npm --prefix frontend install --include=dev && npm --prefix frontend run build`
+   - **Start Command:** `node backend/server.js`
 5. Add the following **Environment Variables** in Render:
    - `NODE_ENV` = `production`
    - `SERVE_FRONTEND` = `true`
@@ -233,7 +233,7 @@ npm test
 
 ## Repository & Deployment URLs
 - **GitHub Repository:** https://github.com/aryangupta2940/Admission-Process-Automation
-- **Deployed Render URL:** *Pending deployment — follow the Render steps above and update this line with your live `https://*.onrender.com` URL after deploying.*
+- **Deployed Render URL:** https://admission-process-automation.onrender.com
 
 ---
 
